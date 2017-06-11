@@ -1,9 +1,18 @@
-*BombSweeper*
+# Minesweeper *"BombSweeper"* project
 
-Launch the file "BombSweeper.jar" to play the game.
+> This project is a version of a minesweeper as the one you can find on Windows.
 
-----
 
-src : contains all the game's java files
-images : contains all the pictures used in the game
-files : contains all other documents
+## Quick start
+
+> **Bombsweeper.jar** : An executable file to launch the game quickly.
+> **LANCEUR.java** : Initialize and runs program.
+
+
+## Architecture
+
+* **src** -> contains all the game's java files.
+
+* **images** -> contains all the pictures and resources used in the game.
+
+* **files** -> contains all other documents (specification notes...).
