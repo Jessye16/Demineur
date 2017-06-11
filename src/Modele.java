@@ -112,7 +112,28 @@
                if(plateauMine[i][j]!=CASEMINE)
                   plateauChiffre[i][j]=plateauMine[i-1][j-1]+plateauMine[i][j-1]+plateauMine[i+1][j-1]+plateauMine[i-1][j]+plateauMine[i+1][j]+plateauMine[i-1][j+1]+plateauMine[i][j+1]+plateauMine[i+1][j+1]; } }
       }
+       
+    // Méthode décrivant l'état des différents plateaux		
+       public String toString(){
+         String chaine="";
+         chaine+="C'est le tableau des Mines\n";
+         for(int i=0;i<nbl;i++){
+            for(int j=0;j<nbc;j++){
+               chaine+=getCaseMine(i,j); }chaine+="\n"; }chaine+="\n";
+      	
+         chaine+="Maintenant le tableau des Chiffres\n";
+         for(int b=0;b<nbl;b++){
+            for(int c=0;c<nbc;c++){
+               chaine+=getCaseChiffre(b,c); }chaine+="\n"; }chaine+="\n";
+         			
+         chaine+="Enfin le tableau des Evenements\n";
+         for(int x=0;x<nbl;x++){
+            for(int y=0;y<nbc;y++){
+               chaine+=getCaseEvt(x,y); }chaine+="\n"; }chaine+="\n";
+         return chaine; }
    
-	
+	// Méthode affichant la méthode toString	
+       void affiche(){
+         System.out.println(toString());}
    	
    }

@@ -17,7 +17,7 @@
        public Aide(){
       
       // Attributs de la fenêtre
-         super ("Démineur Aide");
+         super ("BombSweeper Aide");
          setSize (680,701);
       
       // Placement de la fenêtre
